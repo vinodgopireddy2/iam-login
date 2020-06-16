@@ -1,5 +1,4 @@
-# iam-login
-**IAM register and login service RESTful endpoints (end to end setup, from DNS to backend services)**
+# IAM register and login service (end to end setup, from DNS to backend services)
 
 **Architecture**
 ![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/iam_login_service_architecture.png)
@@ -7,7 +6,7 @@
 **Cloud DNS setup on GCP**
 ![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/Cloud%20DNS%20configuration.png)
 
-**Https LoadBalancer: Host&Paths config and SSL cert and termination config**
+**Https LoadBalancer: Host&Paths config and SSL cert & termination config**
 ```
 For rate limiting, DDos attack protection we can use ingress service provided by GCP (I have not used in my case).
 ```
@@ -70,6 +69,19 @@ Named-port setup for LB:
 gcloud compute instance-groups unmanaged set-named-ports iam \
     --named-ports=iamservice-backend:8080
 ```
+**Execute following commands on mongoDb**
+```
+use iam
+db.createCollection("users")
+db.users.createIndex({"emailLowerCase": 1 }, { unique:true })
+db.users.createIndex({"userName": 1 }, { unique:true })
+
+db.createCollection("sessions")
+//used to set the expiration on session object, for refresh_token expiry
+db.sessions.createIndex( { "createTime": 1 }, { expireAfterSeconds: 14400 } )
+db.sessions.createIndex( { "idleTimeExpiration": 1 }, { expireAfterSeconds: 0 } )
+```
+
 **API documentation**
 ```
 https://documenter.getpostman.com/view/1363980/Szzj7cs9?version=latest#dfaa1474-aeaa-f9db-bb61-e9df65d44498
