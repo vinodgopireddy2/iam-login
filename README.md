@@ -1,7 +1,10 @@
 # iam-login
 **IAM register and login service RESTful endpoints (end to end setup, from DNS to backend services)**
 
-*Steps to setup GCP(google cloud platform) environment)*
+**Architecture**
+![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/scratches/iam_login_service_architecture.png)
+
+**Steps to setup GCP(google cloud platform) environment)**
 ```
 - Go to google cloud console and create Kubernetes cluster
 - If you do not have gcloud setup on your local machine, install it on your local machine.
