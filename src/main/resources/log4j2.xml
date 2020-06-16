@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="TRACE" name="iam" packages="">
+    <Appenders>
+        <File name="LogFile" fileName="logs/iam.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level [TxId : %X{PtxId} , SpanId : %X{PspanId}] %logger{36} - %msg%n"/>
+        </File>
+        <Async name="Async">
+            <AppenderRef ref="LogFile"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Root level="TRACE">
+            <AppenderRef ref="Async"/>
+        </Root>
+    </Loggers>
+</Configuration>

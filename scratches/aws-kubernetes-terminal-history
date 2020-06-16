@@ -1,0 +1,62 @@
+    1  ls
+    2  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64   && chmod +x minikube
+    3  ls
+    4  sudo mkdir -p /usr/local/bin/
+    5  sudo install minikube /usr/local/bin/
+    6  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    7  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    8  docker ps -a
+    9  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   10  docker -v
+   11  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   12  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   13  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic test"
+   14  sudo apt update
+   15  sudo apt install docker-ce
+   16  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   17  docker ps -a
+   18  sudo docker ps -a
+   19  su root
+   20  minikube start
+   21  sudo ls
+   22  usermod -aG sudo ubuntu
+   23  sudo usermod -aG sudo ubuntu
+   24  su root
+   25  su - ubuntu
+   26  docker ps -a
+   27  sudo usermod -aG docker ubuntu
+   28  docker ps -a
+   29  cat /etc/group | grep docker
+   30  exit
+   31  docker ps -a
+   32  minikube start
+   33  kubectl get pods
+   34  sudo apt-get install kubectl
+   35  sudo snap install kubectl
+   36  sudo snap install kubectl --classic
+   37  kubectl get pods
+   38  kubectl get ns
+   39  netstat
+   40  sudo netstat -tunlp |
+   41  sudo netstat -tunlp
+   42  kubectl get ns
+   43  kubectl get pods -- kube-public
+   44  kubectl get pods --namespace kube-public
+   45  kubectl get pods --namespace kube-system
+   46  docker pull vinodgopireddy2/iam:latest
+   47  kubectl create -f -
+   48  kubectl get svc
+   49  kubectl get pods
+   50  iptables -L
+   51  sudo iptables -L
+   52  kubectl get pods
+   53  kubectl exec -it iam bash
+   54  ip route
+   55  kubectl exec -it iam bash
+   56  ping 172.18.0.4
+   57  kubectl logs iam
+   58  kubectl describe svc iam
+   59  ping 10.107.45.59
+   60  telnet 10.107.45.59 30000
+   61  history
+

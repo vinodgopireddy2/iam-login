@@ -1,0 +1,194 @@
+gcloud container clusters get-credentials iam --zone us-central1-c --project iamservice-279605
+  337  gcloud auth login
+  338  gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project iamservice-279605
+  339  kubectl get pods
+  340  kubectl get ns
+  341  kubectl create -f -
+  342  kubectl get nodes --output wide
+  343  ping 35.238.90.50
+  344  ping 35.226.197.203
+  345  kubectl get nodes --output wide
+  346  kubectl create -f apiVersion: v1
+  347  kind: Pod
+  348  metadata:
+  349    name: iam
+  350    labels:
+  351      app: iam
+  352  spec:
+  353    containers:
+  354      - name: iam
+  355        image: vinodgopireddy2/iam:latest
+  356  ---
+  357  apiVersion: v1
+  358  kind: Service
+  359  metadata:
+  360    name: iam
+  361  spec:
+  362    type: NodePort
+  363    ports:
+  364      - name: http
+  365        port: 8080
+  366        targetPort: 8080
+  367    selector:
+  368  kubectl create -f -
+  369  kubectl get pods
+  370  kubectl get svc
+  371  kubectl get pods
+  372  kubectl edit sts iam
+  373  kubectl edit pod iam
+  374  kubectl get pod iam -o yaml
+  375  kubectl get nodes --output wide
+  376  kubectl get pods
+  377  kubect exec -it iam -- bash
+  378  kubectl exec -it iam -- bash
+  379  kubectl logs iam
+  380  kubectl create -f -
+  381  kubect logs -f elk
+  382  kubectl logs -f elk
+  383  kubectl get svc
+  384  kubectl logs -f elk
+  385  mkdir GKE
+  386  cd GKE
+  387  vi x.sh
+  388  mv x.sh gcloud-ssh-sysctl-vmmaxmapcount.sh
+  389  ls -lsrt
+  390  chmod 755 gcloud-ssh-sysctl-vmmaxmapcount.sh
+  391  ./gcloud-ssh-sysctl-vmmaxmapcount.sh
+  392  gcloud config set project IamService
+  393  gcloud config set project iamservice-279605
+  394  ./gcloud-ssh-sysctl-vmmaxmapcount.sh
+  395  kubectl get pods
+  396  kubectl exec -it elk -- bash
+  397  kubectl get nodes --output wide
+  398  kubectl get nodes gke-cluster-1-default-pool-7d79f155-7d33 -o yaml
+  399  kubectl exec -it elk -- bash
+  400  kubectl logs -f elk
+  401  kubectl logs -f elk
+  402  kubectl exec -it elk -- bash
+  403  kubectl get pods
+  404  kubectl delete pod elk
+  405  kubectl create -f -
+  406  kubectl get svc
+  407  kubectl logs -f elk
+  408  kubectl logs -f elk
+  409  kubectl logs -f elk
+  410  kubectl get pods
+  411  kubectl get pods
+  412  kubectl logs -f elk
+  413  kubectl get nodes --output wide
+  414  kubectl get pod elk -o yaml | grep -i host
+  415  kubectl logs -f elk
+  416  kubectl get svc
+  417  kubectl get nodes --output wide
+  418  ping 35.193.230.237
+  419  telnet 35.193.230.237 30601
+  420  kubectl get pods
+  421  kubectl get nodes --output wide
+  422  kubectl get pods
+  423  kubectl get pods
+  424  kubectl get nodes --output wide
+  425  kubectl get nodes --output wide
+  426  kubectl get nodes --output wide
+  427  kubectl get pods
+  428  kubectl delete pod iam
+  429  kubectl delete pod elk
+  430  kubectl delete svc elk
+  431  kubectl delete svc iam
+  432  kubectl get pods
+  433  ll
+  434  kubectl create -f -
+  435  ./gcloud-ssh-sysctl-vmmaxmapcount.sh
+  436  kubectl get nodes --output wide
+  437  kubectl get nodes --output wide
+  438  kubectl get pods
+  439  kubectl create -f -
+  440  kubectl logs -f elk
+  441  kubectl logs -f elk
+  442  watch -n1 `kubectl get pods`
+  443  kubectl get pods
+  444  kubectl get pods
+  445  kubectl logs -f elk
+  446  kubectl get pods
+  447  watch -n1 "kubectl get pods"
+  448  brew install watch
+  449  watch -n1 "kubectl get pods"
+  450  kubectl logs -f elk
+  451  kubectl exec -it elk -- bash
+  452  kubectl get pods
+  453  kubectl get pod elk -o yaml | grep -i host
+  454  kubectl get nodes --output wide
+  455  gcloud compute firewall-rules create kibana-node-port --allow tcp:30601
+  456  kubectl get svc
+  457  kubectl create -f -
+  458  kubectl create -f -
+  459  gcloud compute firewall-rules create kibana-node-port --allow tcp:30080
+  460  gcloud compute firewall-rules create iam-node-port --allow tcp:30080
+  461  kubectl get pod iam -o yaml
+  462  kubectl get nodes --output wide
+  463  strace ls
+  464  vi mongoDbCmds.txt
+  465  kubectl exec -it mongo -- bash
+  466  kubectl get nodes --output wide
+  467  kubectl logs iam
+  468  kubectl logs -f iam
+  469  kubectl delete pod mongo
+  470  kubectl create -f -
+  471  kubectl exec -it mongo -- bash
+  472  kubectl get ns
+  473  kubectl get pods --ns kube-system
+  474  kubectl get pods  kube-system
+  475  kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}"
+  476  kubectl get pods --all-namespaces -o go-template --template="{{range .items}}{{range .spec.containers}}{{.image}} {{end}}{{end}}"
+  477  kubectl exec -it iam -- bash
+  478  kubectl get nodes --output wide
+  479  kubectl exec -it iam -- bash
+  480  kubectl delete pod mongo
+  481  kubectl delete svc mongo
+  482  kubectl create -f -
+  483  kubectl exec -it mongo -- bash
+  484  kubectl exec -it mongo -- bash
+  485  kubectl delete pod iam
+  486  kubectl delete svc iam
+  487  kubectl create -f -
+  488  kubectl get pod iam -o yaml | grep -i host
+  489  kubectl get nodes --output wide
+  490  kubectl exec -it mongo -- bash
+  491  kubectl exec -it iam -- bash
+  492  kubectl logs -f iam
+  493  kubectl exec -it mongo -- bash
+  494  kubectl logs -f iam
+  495  kubectl exec -it mongo -- bash
+  496  kubectl delete svc mongo
+  497  kubectl delete pod mongo
+  498  kubectl create -f -
+  499  kubectl exec -it mongo -- bash
+  500  vi mongoDbCmds.txt
+  501  kubectl get nodes -o wide
+  502  docker ps -a
+  503  docker ps -a
+  504  docker start iam
+  505  docker start mongo
+  506  docker start mongodb
+  507  docker start elk
+  508  docker ps -a
+  509  cd GKE/
+  510  cat mongoDbCmds.txt
+  511  docker exec -it mongodb bash
+  512  cd
+  514  la
+  515  ls
+  516  ll logs/iam.log
+  517  vi logs/iam.log
+  518  docker exec -it iam bash
+  519  docker exec -it mongodb bash
+  520  docker exec -it iam bash
+  521  docker exec -it elk bash
+  522  docker exec -it iam bash
+  523  ls
+  524  vi start.sh
+  525  vi start.sh
+  526  vi start.sh
+  527  vi start.sh
+  528  ll
+  529  vi elk.yaml
+  530  history

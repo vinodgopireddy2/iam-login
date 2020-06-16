@@ -1,0 +1,15 @@
+use iam
+db.createCollection("users")
+db.users.createIndex({"emailLowerCase": 1 }, { unique:true })
+db.users.createIndex({"userName": 1 }, { unique:true })
+
+db.createCollection("sessions")
+//used to set the expiration on session object, for refresh_token expiry
+db.sessions.createIndex( { "createTime": 1 }, { expireAfterSeconds: 14400 } )
+db.sessions.createIndex( { "idleTimeExpiration": 1 }, { expireAfterSeconds: 0 } )
+
+db.getCollection("sessions").find({})
+db.getCollection("sessions").drop()
+
+db.getCollection("users").find({})
+db.getCollection("users").drop()

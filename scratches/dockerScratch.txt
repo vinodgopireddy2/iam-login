@@ -1,0 +1,510 @@
+docker tag iam/1.0 vinodgopireddy2/iam
+docker push vinodgopireddy2/iam
+docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+docker pull mongo:4.2.2
+docker run -it -v /data/db:/mongodata --name mongodb -d mongo
+
+
+docker tag sebp/elk vinodgopireddy2/elk:latest
+docker tag mongo:4.0.4 vinodgopireddy2/mongo:1.0
+docker push vinodgopireddy2/mongo:1.0
+
+
+    3  docker rm ubuntu
+    4  ssh vigopire@hxjump01.eng.storvisor.com
+    5  :q
+    6  ssh vigopire@hxjump01.eng.storvisor.com
+    7  docker stop iam
+    8  docker rm iam
+    9  docker exec -it iam bash
+   10  docker ps -a
+   11  docker stop splunk
+   12  docker rmsplunk
+   13  docker rm splunk
+   docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+
+   14  docker push vinodgopireddy2/iam:iam
+   15  docker push iam vinodgopireddy2/iam
+   16  docker tag iam vinodgopireddy2/iam
+   17  docker tag iam:1.0 vinodgopireddy2/iam
+   18  docker push vinodgopireddy2/iam
+   19  docker ps -a
+   20  docker tag sebp/elk vinodgopireddy2/iam:elk
+   21  docker tag sebp/elk vinodgopireddy2/iam/elk
+   22  docker push vinodgopireddy2/iam/elk
+   23  docker tag sebp/elk elk
+   24  docker push vinodgopireddy2/iam:elk
+   25  docker tag sebp/elk vinodgopireddy2/elk:latest
+   26  docker push vinodgopireddy2/elk:latest
+   27  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   28  cd Downloads/
+   29  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   30  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   31  telnet 3.236.56.203 30000
+   32  nc
+   33  nc 3.236.56.203 30000
+   34  brew install telnet
+   35  telnet 3.236.56.203 30000
+   36  telnet 3.236.56.203 30000
+   37  telnet 3.236.56.203 30000
+   38  telnet 3.236.56.203 30000
+   39  telnet 3.236.56.203 30000
+   40  telnet 3.236.56.203 30000
+   41  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   42  cd Downloads/
+   43  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   44  docker ps -a
+   45  docker tag c0d5f7c58446 mongo
+   46  docker images 
+   47  docker tag 525bd2016729 mongo
+   48  docker push vinodgopireddy2/iam:mongo
+   49  docker push vinodgopireddy2/iam:mongo
+   50  docker tag mongo:4.0.4 mongo
+   51  docker push vinodgopireddy2/iam:mongo
+   52  docker tag mongo:4.0.4 vinodgopireddy2/iam/mongo
+   53  docker push vinodgopireddy2/iam:mongo
+   54  docker push vinodgopireddy2/iam/mongo
+   55  docker ps -a
+   56  docker images -a
+   57  docker images -a | grep -v none
+   58  docker images -a | grep -v none
+   59  docker ps -a
+   60  docker tag mongo:4.0.4 vinodgopireddy2/mongo:1.0
+   61  docker push vinodgopireddy2/mongo:1.0
+   62  cd Downloads/
+   63  chmod 400 FreeServer.pem
+   64  ssh -i "FreeServer.pem" ec2-user@ec2-34-224-16-70.compute-1.amazonaws.com
+   65  chmod 400 FreeServer.pem
+   66  ssh -i "FreeServer.pem" ec2-user@ec2-34-224-16-70.compute-1.amazonaws.com
+   67  ls -lsrt FreeServer.pem 
+   68  ssh -i "FreeServer.pem" ec2-user@ec2-34-224-16-70.compute-1.amazonaws.com
+   69  ssh -i "FreeServer.pem" ec2-user@ec2-34-224-16-70.compute-1.amazonaws.com
+   70  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   71  chmod 400 IamServer.pem 
+   72  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   73  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   74  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   75  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   76  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   77  ssh -i "IamServer.pem" ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   78  ssh -i IamServer.pem ec2-user@ec2-3-236-56-203.compute-1.amazonaws.com
+   79  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   80  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   81  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   82  ssh -i IamServer.pem ubuntu@ec2-3-236-56-203.compute-1.amazonaws.com
+   83  ssh -i "FreeServer.pem" ec2-user@ec2-34-224-16-70.compute-1.amazonaws.com
+   84  ssh -i "FreeServer.pem" ubuntu@ec2-35-153-67-185.compute-1.amazonaws.com
+   85  ssh -i "FreeServer.pem" ubuntu@ec2-35-153-67-185.compute-1.amazonaws.com
+   86  ssh -i "FreeServer.pem" ubuntu@ec2-35-153-67-185.compute-1.amazonaws.com
+   87  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   88  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   89  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   90  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   91  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+   92  cd Downloads/test.ansible
+   93  ls
+   94  ansible-playbook test.yml -i node -vvv
+   95  ping 10.193.34.107
+   96  virtualenv ansible2.4
+   97  source venv/bin/activate
+   98  source ansible2.4/bin/activate
+   99  ansible-playbook --version
+  100  ssh vigopire@hxjump01.eng.storvisor.com
+  101  docker ps -a
+  102  docker inspect elk
+  103  docker exec -it iam bash
+  104  cat ~/.ssh/id_rsa.pub 
+  105  ping 100.24.115.249
+  106  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  107  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  108  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  109  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  110  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  111  ifconfig
+  112  ifconfig
+  113  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  114  ping ec2-100-24-115-249.compute-1.amazonaws.com
+  115  ssh ubuntu@
+  116  cd
+  117  cd Downloads/
+  118  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  119  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  120  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  121  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  122  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  123  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  124  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  125  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  126  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  127  ssh -i "IamServer.pem" ubuntu@ec2-18-232-185-170.compute-1.amazonaws.com
+  128  ssh -i "IamServer.pem" ubuntu@ec2-18-232-185-170.compute-1.amazonaws.com
+  129  docker image -a
+  130  docker images -a
+  131  docker images -a | grep -v none
+  132  docker rmi $(docker images -q)
+  133  docker images -a
+  134  docker rmi $(docker images -q)
+  135  docker rmi $(docker images | grep “^” | awk “{print $3}”)
+  136  docker rmi $(docker images -f “dangling=true” -q)
+  137  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  138  ssh -i "IamServer.pem" ubuntu@ec2-100-24-115-249.compute-1.amazonaws.com
+  139  cd "$(brew --repo homebrew/core)"
+  140  pwd
+  141  git fetch --unshallow
+  142  brew list ansible --versions
+  143  brew install ansible 2.6.4
+  144  brew install ansible2.6.4
+  145  brew install ansible2.6
+  146  cd -
+  147  virtualenv ansible24
+  148  source ansible24/bin/activate
+  149  pip install ansible==2.6.6
+  150  cd Downloads/test.ansible
+  151  cat run.sh 
+  152  ansible-playbook test.yml -i node -vvv
+  153  vi test.yml 
+  154  ansible-playbook test.yml -i node -vvv
+  155  vi test.yml 
+  156  vi test.yml 
+  157  ansible-playbook test.yml -i node -vvv
+  158  ansible-playbook --version
+  159  vi test.yml 
+  160  ansible-playbook --version
+  161  ansible-playbook test.yml -i node -vvv
+  162  vi test.yml 
+  163  ansible-playbook test.yml -i node -vvv
+  164  vi test.yml 
+  165  vi test.yml 
+  166  ansible-playbook test.yml -i node -vvv
+  167  ansible-playbook test.yml -i node -vvv
+  168  vi test.yml 
+  169  cd Downloads/test.ansible
+  170  ls
+  171  bash run.sh 
+  172  cat test.yml 
+  173  cat run.sh 
+  174  python ansible-playbook test.yml -i node -vvv
+  175  python ansible-playbook test.yml -i node -vvv
+  176  ansible-playbook test.yml -i node -vvv
+  177  brew install ansible
+  178  ansible-playbook test.yml -i node -vvv
+  179  brew install sshpass
+  180  brew install sshpass
+  181  vi node 
+  182  brew install sshpass
+  183  ansible-playbook test.yml -i node -vvv
+  184  vi node 
+  185  ansible-playbook test.yml -i node -vvv
+  186  brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+  187  ansible-playbook test.yml -i node -vvv
+  188  vi node 
+  189  ansible-playbook test.yml -i node -vvv
+  190  vi node 
+  191  ansible-playbook test.yml -i node -vvv
+  192  ansible-playbook test.yml -i node -vvv
+  193  cat ~/.ssh/id_rsa.pub 
+  194  cat ~/.ssh/id_rsa.pub 
+  195  ansible-playbook test.yml -i node -vvv
+  196  vi test.yml 
+  197  ansible-playbook test.yml -i node -vvv
+  198  vi test.yml 
+  199  ansible-playbook test.yml -i node -vvv
+  200  vi test.yml 
+  201  ansible-playbook test.yml -i node -vvv
+  202  ansible-playbook test.yml -i node -vvv
+  203  vi test.yml 
+  204  ansible-playbook test.yml -i node -vvv
+  205  vi test.yml 
+  206  ansible-playbook test.yml -i node -vvv
+  207  vi test.yml 
+  208  ansible-playbook test.yml -i node -vvv
+  209  vi test.yml 
+  210  ansible-playbook test.yml -i node -vvv
+  211  vi test.yml 
+  212  vi test.yml 
+  213  ansible-playbook test.yml -i node -vvv
+  214  vi test.yml 
+  215  ansible-playbook test.yml -i node -vvv
+  216  vi test.yml 
+  217  ansible-playbook test.yml -i node -vvv
+  218  vi test.yml 
+  219  ansible-playbook test.yml -i node -vvv
+  220  cat test.yml 
+  221  vi test.yml 
+  222  cat test.yml 
+  223  ansible-playbook test.yml -i node -vvv
+  224  cat test.yml 
+  225  vi test.yml 
+  226  cat test.yml 
+  227  ansible-playbook test.yml -i node -vvv
+  228  vi test.yml 
+  229  ansible-playbook test.yml -i node -vvv
+  230  vi test.yml 
+  231  ansible-playbook test.yml -i node -vvv
+  232  vi test.yml 
+  233  ansible-playbook test.yml -i node -vvv
+  234  vi test.yml 
+  235  ansible-playbook test.yml -i node -vvv
+  236  vi test.yml 
+  237  ansible-playbook test.yml -i node -vvv
+  238  vi test.yml 
+  239  ansible-playbook test.yml -i node -vvv
+  240  vi test.yml 
+  241  ansible-playbook test.yml -i node -vvv
+  242  vi test.yml 
+  243  ansible-playbook test.yml -i node -vvv
+  244  cat test.yml 
+  245  vi test.yml 
+  246  ansible-playbook test.yml -i node -vvv
+  247  vi test.yml 
+  248  ansible-playbook test.yml -i node -vvv
+  249  cat test.yml 
+  250  vi test.yml 
+  251  vi test.yml 
+  252  ansible-playbook test.yml -i node -vvv
+  253  vi test.yml 
+  254  ansible-playbook test.yml -i node -vvv
+  255  vi test.yml 
+  256  ansible-playbook test.yml -i node -vvv
+  257  vi test.yml 
+  258  vi test.yml 
+  259  ansible-playbook test.yml -i node -vvv
+  260  vi test.yml 
+  261  ansible-playbook test.yml -i node -vvv
+  262  vi test
+  263  vi test.xml
+  264  vi test.yml 
+  265  gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project iamservice-279605
+  266  gcloud auth login
+  267  gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project iamservice-279605
+  268  kubectl get pods
+  269  kubectl get ns
+  270  kubectl create -f -
+  271  kubectl get nodes --output wide
+  272  ping 35.238.90.50
+  273  ping 35.226.197.203
+  274  kubectl get nodes --output wide
+  275  kubectl create -f apiVersion: v1
+  276  kind: Pod
+  277  metadata:
+  278    name: iam
+  279    labels:
+  280      app: iam
+  281  spec:
+  282    containers:
+  283      - name: iam
+  284        image: vinodgopireddy2/iam:latest
+  285  ---
+  286  apiVersion: v1
+  287  kind: Service
+  288  metadata:
+  289    name: iam
+  290  spec:
+  291    type: NodePort
+  292    ports:
+  293      - name: http
+  294        port: 8080
+  295        targetPort: 8080
+  296    selector:
+  297  kubectl create -f -
+  298  kubectl get pods
+  299  kubectl get svc
+  300  kubectl get pods
+  301  kubectl edit sts iam
+  302  kubectl edit pod iam
+  303  kubectl get pod iam -o yaml
+  304  kubectl get nodes --output wide
+  305  kubectl get pods
+  306  kubect exec -it iam -- bash
+  307  kubectl exec -it iam -- bash
+  308  kubectl logs iam
+  309  kubectl create -f -
+  310  kubect logs -f elk
+  311  kubectl logs -f elk
+  312  kubectl get svc
+  313  kubectl logs -f elk
+  314  mkdir GKE
+  315  cd GKE
+  316  vi x.sh
+  317  mv x.sh gcloud-ssh-sysctl-vmmaxmapcount.sh
+  318  ls -lsrt 
+  319  chmod 755 gcloud-ssh-sysctl-vmmaxmapcount.sh 
+  320  ./gcloud-ssh-sysctl-vmmaxmapcount.sh 
+  321  gcloud config set project IamService
+  322  gcloud config set project iamservice-279605
+  323  ./gcloud-ssh-sysctl-vmmaxmapcount.sh 
+  324  kubectl get pods
+  325  kubectl exec -it elk -- bash
+  326  kubectl get nodes --output wide
+  327  kubectl get nodes gke-cluster-1-default-pool-7d79f155-7d33 -o yaml
+  328  kubectl exec -it elk -- bash
+  329  kubectl logs -f elk
+  330  kubectl logs -f elk
+  331  kubectl exec -it elk -- bash
+  332  kubectl get pods
+  333  kubectl delete pod elk
+  334  kubectl create -f -
+  335  kubectl get svc
+  336  kubectl logs -f elk
+  337  kubectl logs -f elk
+  338  kubectl logs -f elk
+  339  kubectl get pods
+  340  kubectl get pods
+  341  kubectl logs -f elk
+  342  kubectl get nodes --output wide
+  343  kubectl get pod elk -o yaml | grep -i host
+  344  kubectl logs -f elk
+  345  kubectl get svc 
+  346  kubectl get nodes --output wide
+  347  ping 35.193.230.237
+  348  telnet 35.193.230.237 30601
+  349  kubectl get pods
+  350  kubectl get nodes --output wide
+  351  kubectl get pods
+  352  kubectl get pods
+  353  kubectl get nodes --output wide
+  354  kubectl get nodes --output wide
+  355  kubectl get nodes --output wide
+  356  kubectl get pods
+  357  kubectl delete pod iam
+  358  kubectl delete pod elk
+  359  kubectl delete svc elk
+  360  kubectl delete svc iam
+  361  kubectl get pods
+  362  ll
+  363  kubectl create -f -
+  364  ./gcloud-ssh-sysctl-vmmaxmapcount.sh 
+  365  kubectl get nodes --output wide
+  366  kubectl get nodes --output wide
+  367  kubectl get pods
+  368  kubectl create -f -
+  369  kubectl logs -f elk
+  370  kubectl logs -f elk
+  371  watch -n1 `kubectl get pods`
+  372  kubectl get pods
+  373  kubectl get pods
+  374  kubectl logs -f elk
+  375  kubectl get pods
+  376  watch -n1 "kubectl get pods"
+  377  brew install watch
+  378  watch -n1 "kubectl get pods"
+  379  kubectl logs -f elk
+  380  kubectl exec -it elk -- bash
+  381  kubectl get pods
+  382  kubectl get pod elk -o yaml | grep -i host
+  383  kubectl get nodes --output wide
+  384  gcloud compute firewall-rules create kibana-node-port --allow tcp:30601
+  385  kubectl get svc
+  386  kubectl create -f -
+  387  kubectl create -f -
+  388  gcloud compute firewall-rules create kibana-node-port --allow tcp:30080
+  389  gcloud compute firewall-rules create iam-node-port --allow tcp:30080
+  390  kubectl get pod iam -o yaml
+  391  kubectl get nodes --output wide
+  392  strace ls
+  393  vi mongoDbCmds.txt
+  394  kubectl exec -it mongo -- bash
+  395  kubectl get nodes --output wide
+  396  kubectl logs iam
+  397  kubectl logs -f iam
+  398  kubectl delete pod mongo
+  399  kubectl create -f -
+  400  kubectl exec -it mongo -- bash
+  401  kubectl get ns
+  402  kubectl get pods --ns kube-system
+  403  kubectl get pods  kube-system
+  404  kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}"
+  405  kubectl get pods --all-namespaces -o go-template --template="{{range .items}}{{range .spec.containers}}{{.image}} {{end}}{{end}}"
+  406  kubectl exec -it iam -- bash
+  407  kubectl get nodes --output wide
+  408  kubectl exec -it iam -- bash
+  409  kubectl delete pod mongo
+  410  kubectl delete svc mongo
+  411  kubectl create -f -
+  412  kubectl exec -it mongo -- bash
+  413  kubectl exec -it mongo -- bash
+  414  kubectl delete pod iam
+  415  kubectl delete svc iam
+  416  kubectl create -f -
+  417  kubectl get pod iam -o yaml | grep -i host
+  418  kubectl get nodes --output wide
+  419  kubectl exec -it mongo -- bash
+  420  kubectl exec -it iam -- bash
+  421  kubectl logs -f iam
+  422  kubectl exec -it mongo -- bash
+  423  kubectl logs -f iam
+  424  kubectl exec -it mongo -- bash
+  425  kubectl delete svc mongo
+  426  kubectl delete pod mongo
+  427  kubectl create -f -
+  428  kubectl exec -it mongo -- bash
+  429  vi mongoDbCmds.txt 
+  430  docker exec -it 66d984f4815c84bf42f44c01b0aec7666befed14511588f0a6ae4dc2d13babcf /bin/sh; exit
+  431  docker ps -a
+  432   docker build --tag iam:1.0 .
+  433  docker rm iam
+  434  docker stop iam
+  435  docker rm iam
+  436  docker run -p 8080:8080 --name iam iam:1.0
+  437  docker stop iam
+  438  docker rm iam
+  439   docker build --tag iam:1.0 .
+  440  docker run -p 8080:8080 --name iam iam:1.0
+  441  docker stop iam
+  442  docker rm iam
+  443   docker build --tag iam:1.0 .
+  444  docker run -p 8080:8080 --name iam iam:1.0
+  445  docker stop iam
+  446  docker rm iam
+  447   docker build --tag iam:1.0 .
+  448  docker run -p 8080:8080 --name iam iam:1.0
+  449  docker stop iam
+  450  docker rm iam
+  451   docker build --tag iam:1.0 .
+  452  docker run -p 8080:8080 --name iam iam:1.0
+  453  docker stop iam
+  454  docker rm iam
+  455   docker build --tag iam:1.0 .
+  456  docker run -p 8080:8080 --name iam iam:1.0
+  457  docker stop iam
+  458  docker rm iam
+  459   docker build --tag iam:1.0 .
+  460  docker run -p 8080:8080 --name iam iam:1.0
+  466  docker exec -it c0d5f7c5844640409364b58fed6b392423ac0999cd0d8878c8219b01b0c270df /bin/sh; exit
+  467  docker stop iam
+  468  docker rm iam
+  469   docker build --tag iam:1.0 .
+  470  docker run -p 8080:8080 --name iam iam:1.0
+  471  docker stop iam
+  472  docker rm iam
+  473   docker build --tag iam:1.0 .
+  474  docker run -p 8080:8080 --name iam iam:1.0
+  475  docker stop iam
+  476  docker rm iam
+  477   docker build --tag iam:1.0 .
+  478  docker run -p 8080:8080 --name iam iam:1.0
+  479  docker stop iam
+  480  docker rm iam
+  481   docker build --tag iam:1.0 .
+  482  docker run -p 8080:8080 --name iam iam:1.0
+  483  docker stop iam
+  484  docker rm iam
+  485   docker build --tag iam:1.0 .
+  486  docker run -p 8080:8080 --name iam iam:1.0
+  487  mvn clean install
+  488  mvn clean install
+  489  mvn clean install
+  490  mvn clean install
+  492  ps -ef
+  493  ps -ef | grep docker
+  494  kill -9 35328
+  495  ps -ef | grep docker
+  496  ps -ef | grep docker
+  497  kill -9 38144
+  498  ps -ef | grep docker
+  499  kill -9 38429
+  500  sudo kill -9 38429
+  501  vi mongoDbCmds.txt
+  docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+
+  502  history > dockerScratch.txt
