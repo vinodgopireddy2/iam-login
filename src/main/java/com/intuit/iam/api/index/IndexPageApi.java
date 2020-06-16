@@ -43,7 +43,7 @@ public class IndexPageApi {
             "<img src=\"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png\" style=\"width: 50px; vertical-align: sub;\"/>\n" +
             "</a>\n" +
             "</span>\n" +
-            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\" onclick=\"openDocumentation()\">\n" +
+            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\">\n" +
             "  <div class=\"mdc-button__ripple\"></div>\n" +
             "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">IAM Service Architecture</span>\n" +
             "</button>\n" +
