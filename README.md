@@ -2,7 +2,20 @@
 **IAM register and login service RESTful endpoints (end to end setup, from DNS to backend services)**
 
 **Architecture**
-![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/scratches/iam_login_service_architecture.png)
+![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/iam_login_service_architecture.png)
+
+**Cloud DNS setup on GCP**
+![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/Cloud%20DNS%20configuration.png)
+
+**Https LoadBalancer: Host&Paths config and SSL cert and termination config**
+```
+For rate limiting, DDos attack protection we can use ingress service provided by GCP (I have not used in my case).
+```
+*LoadBalancer-Host&PathRules*
+![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/Cloud%20DNS%20configuration.png)
+
+*Cloud DNS configuration*
+![alt text](https://github.com/vinodgopireddy2/iam-login/blob/master/screenshots/LoadBalancer-Host%26PathRules.png)
 
 **Steps to setup GCP(google cloud platform) environment)**
 ```
