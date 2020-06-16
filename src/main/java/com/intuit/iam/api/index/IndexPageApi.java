@@ -28,18 +28,22 @@ public class IndexPageApi {
             "\n" +
             "<body>\n" +
             "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Intuit_Logo.svg/1200px-Intuit_Logo.svg.png\" alt=\"Intuit Inc.\" width=\"123\" height=\"40\">\n" +
-            "\n" +
             "<div style=\"color: #ffffff;display: inline-block;background: #365bef;padding: 6px;vertical-align: super;width: 1450px;\">\n" +
             "<h2 style=\"display:inline;margin-left: 350px;\">Welcome to Intuit's Identity and Access management home page</h2>\n" +
             "</div>\n" +
-            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; background-color:#365bef\" class=\"mdc-button mdc-button--raised\" onclick=\"openDocumentation()\">\n" +
+            "<span style=\"display: block;\">\n" +
+            "<button style=\"margin-top: -30px;margin-left: 128px; background-color:#365bef\" class=\"mdc-button mdc-button--raised\" onclick=\"openDocumentation()\">\n" +
             "  <div class=\"mdc-button__ripple\"></div>\n" +
             "  <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\"\n" +
             "    >bookmark</i\n" +
             "  >\n" +
             "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">REST API Documentation</span>\n" +
             "</button>\n" +
-            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\">\n" +
+            "<a href=\"https://github.com/vinodgopireddy2/iam-login\" target=\"_blank\">\n" +
+            "<img src=\"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png\" style=\"width: 50px; vertical-align: sub;\"/>\n" +
+            "</a>\n" +
+            "</span>\n" +
+            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\" onclick=\"openDocumentation()\">\n" +
             "  <div class=\"mdc-button__ripple\"></div>\n" +
             "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">IAM Service Architecture</span>\n" +
             "</button>\n" +
@@ -54,7 +58,7 @@ public class IndexPageApi {
             "\n" +
             "<script>\n" +
             "function openDocumentation() {\n" +
-            "  window.location.href = \"https://documenter.getpostman.com/view/1363980/Szzj7cs9?version=latest#dfaa1474-aeaa-f9db-bb61-e9df65d44498\";\n" +
+            "  window.open(\"https://documenter.getpostman.com/view/1363980/Szzj7cs9?version=latest#dfaa1474-aeaa-f9db-bb61-e9df65d44498\", \"_blank\");\n" +
             "}\n" +
             "</script>\n" +
             "\n" +
