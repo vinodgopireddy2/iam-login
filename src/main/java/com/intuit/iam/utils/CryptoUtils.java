@@ -107,34 +107,4 @@ public class CryptoUtils {
         }
         return new String(hexChars);
     }
-
-    //TODO remove this
-    public static void main(String[] args) {
-    try {
-
-        byte[] x = getSalt();
-        System.out.println(Product.QUCIKBOOKS_SELF_EMPLOYEED.toString());
-        System.out.println(bytesToHex(x));
-
-        String  originalPassword = "password";
-        String generatedSecuredPasswordHash = generateStorngPasswordHash(originalPassword);
-        System.out.println(generatedSecuredPasswordHash);
-
-        boolean matched = validatePassword("password", generatedSecuredPasswordHash);
-        System.out.println(matched);
-
-        matched = validatePassword("password1", generatedSecuredPasswordHash);
-        System.out.println(matched);
-
-        UUID uuid = generateUUID();
-        System.out.println(uuid.toString());
-
-        MessageDigest salt = MessageDigest.getInstance("SHA-256");
-        System.out.println(generateUniqueKeyWithUUIDAndMessageDigest());
-        System.out.println(generateUniqueKeyWithUUIDAndMessageDigest());
-        } catch (Exception e) {
-            System.out.println("chill");
-        }
-    }
-
 }

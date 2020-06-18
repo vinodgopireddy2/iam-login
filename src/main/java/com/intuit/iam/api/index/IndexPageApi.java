@@ -19,7 +19,7 @@ public class IndexPageApi {
     private static final Logger logger = LogManager.getLogger(com.intuit.iam.api.login.LoginApiService.class);
 
     @GET
-    @Path("")
+    @Path("home")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.TEXT_HTML)
     public Response login(LoginRequestBody body, @Context HttpServletRequest req, @Context HttpServletResponse res) {
@@ -65,7 +65,7 @@ public class IndexPageApi {
             "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">AUDIT METRICS</span>\n" +
             "</button>\n" +
             "</span>\n" +
-            "<iframe id=\"serv-arch-iframe\" src=\"https://drive.google.com/file/d/1_52F63AqBnseyGe5xg9yuVIagAoY6muH/preview\"  width=\"800\" height=\"600\" style=\"\n" +
+            "<iframe id=\"serv-arch-iframe\" src=\"https://drive.google.com/file/d/1NEWZgg6n7YA8JUJQUUZyvCUB9NSPdlgt/preview\"  width=\"800\" height=\"600\" style=\"\n" +
             "    transform: rotate(270deg);\n" +
             "    height: 1200px;\n" +
             "    margin-left: 325px;\n" +
@@ -73,7 +73,7 @@ public class IndexPageApi {
             "    margin-bottom: -150px;\n" +
             "    border: none;\n" +
             "\"></iframe>\n" +
-            "<iframe id=\"audit-metrics-iframe\" src=\"http://identity-intuitinc.com:30601/goto/ac29aeb83dad3ac6d0253932fe4f4be7\" height=\"1100\" width=\"1400\" style=\"\n" +
+            "<iframe id=\"audit-metrics-iframe\" src=\"https://www.identity-intuitinc.com/goto/d44e25899b0e80a2c8511868a6f31556\" height=\"1100\" width=\"1400\" style=\"\n" +
             "height: 1100px;\n" +
             "margin-left: 120px;\n" +
             "margin-bottom: -150px;\n" +

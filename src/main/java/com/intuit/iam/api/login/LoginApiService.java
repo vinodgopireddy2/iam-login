@@ -60,12 +60,19 @@ public class LoginApiService {
         try {
             validator.validate();
         } catch (Exception e) {
+            logger.error("Post body validation failed.", e);
             return BuildErrorResponse.buildBadRequestResponse(Response.Status.BAD_REQUEST.getStatusCode(), e);
         }
 
         try {
             User user = userAccessor.get(loginRequestBody.getUserName().toLowerCase()); //While registering, userName was made case insensitive
-
+            if (user == null) {
+                logger.error("Username not registered");
+                return BuildErrorResponse.buildErrorResponse(IamErrors.eLoginFailure.code(),
+                        IamErrors.eLoginFailure.getMsg(),
+                        Response.Status.UNAUTHORIZED,
+                        IamErrors.eLoginFailure.getMsg());
+            }
             //accLockTime < current time then only proceed. Reset failedLoginAttempt to 0
             if(user.getAccLockTime() > Instant.now().getEpochSecond()) {
                 return BuildErrorResponse.buildErrorResponse(IamErrors.eAccountLockedOnFailedAttempts.code(),
@@ -82,6 +89,7 @@ public class LoginApiService {
             }
 
         } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
+            logger.error("Error happened in crypto library", e);
             return BuildErrorResponse.buildErrorResponse(e, IamErrors.eCryptoError, true);
         }
     }
@@ -126,6 +134,7 @@ public class LoginApiService {
             return Response.status(Response.Status.OK)
                 .type(MediaType.APPLICATION_JSON).entity(response).build();
         } catch (NoSuchAlgorithmException |  UnsupportedEncodingException e) {
+            logger.error("Error happened in crypto library", e);
             return BuildErrorResponse.buildErrorResponse(e, IamErrors.eCryptoError, true);
         }
     }
