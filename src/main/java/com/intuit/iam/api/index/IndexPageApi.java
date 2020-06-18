@@ -49,11 +49,23 @@ public class IndexPageApi {
             "<img src=\"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png\" style=\"width: 50px; vertical-align: sub;\"/>\n" +
             "</a>\n" +
             "</span>\n" +
-            "<button style=\"display:block;margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\">\n" +
+            "<span style=\"display: block\">\n" +
+            "<button id=\"serv-arch\" style=\"margin-top: 15px;margin-left: 128px; background-color:#365bef\" class=\"mdc-button mdc-button--raised\" onclick=\"onServiceArchClicked()\">\n" +
             "  <div class=\"mdc-button__ripple\"></div>\n" +
+            "  <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\"\n" +
+            "    >bookmark</i\n" +
+            "  >\n" +
             "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">IAM Service Architecture</span>\n" +
             "</button>\n" +
-            "<iframe src=\"https://drive.google.com/file/d/1_52F63AqBnseyGe5xg9yuVIagAoY6muH/preview\"  width=\"800\" height=\"600\" style=\"\n" +
+            "<button id=\"audit-metrics\" style=\"margin-top: 15px;margin-left: 128px; color:#365bef\" class=\"mdc-button mdc-button--outlined\" onclick=\"onAuditMetricsClicked()\">\n" +
+            "  <div class=\"mdc-button__ripple\"></div>\n" +
+            "  <i class=\"material-icons mdc-button__icon\" aria-hidden=\"true\"\n" +
+            "    >bookmark</i\n" +
+            "  >\n" +
+            "  <span class=\"mdc-button__label\" style=\"font-weight: bold;\">AUDIT METRICS</span>\n" +
+            "</button>\n" +
+            "</span>\n" +
+            "<iframe id=\"serv-arch-iframe\" src=\"https://drive.google.com/file/d/1_52F63AqBnseyGe5xg9yuVIagAoY6muH/preview\"  width=\"800\" height=\"600\" style=\"\n" +
             "    transform: rotate(270deg);\n" +
             "    height: 1200px;\n" +
             "    margin-left: 325px;\n" +
@@ -61,10 +73,41 @@ public class IndexPageApi {
             "    margin-bottom: -150px;\n" +
             "    border: none;\n" +
             "\"></iframe>\n" +
-            "\n" +
+            "<iframe id=\"audit-metrics-iframe\" src=\"http://identity-intuitinc.com:30601/goto/ac29aeb83dad3ac6d0253932fe4f4be7\" height=\"1100\" width=\"1400\" style=\"\n" +
+            "height: 1100px;\n" +
+            "margin-left: 120px;\n" +
+            "margin-bottom: -150px;\n" +
+            "margin-top: 15px;\n" +
+            "border: none;\n" +
+            "display: none;\n" +
+            "\"></iframe>\n" +
             "<script>\n" +
             "function openDocumentation() {\n" +
             "  window.open(\"https://documenter.getpostman.com/view/1363980/Szzj7cs9?version=latest#dfaa1474-aeaa-f9db-bb61-e9df65d44498\", \"_blank\");\n" +
+            "}\n" +
+            "function onServiceArchClicked() {\n" +
+            "  document.getElementById(\"serv-arch\").classList.add(\"mdc-button--raised\");\n" +
+            "  document.getElementById(\"serv-arch\").classList.remove(\"mdc-button--outlined\");\n" +
+            "  document.getElementById(\"audit-metrics\").classList.add(\"mdc-button--outlined\");\n" +
+            "  document.getElementById(\"audit-metrics\").classList.remove(\"mdc-button--raised\");\n" +
+            "  document.getElementById(\"audit-metrics-iframe\").style.display = 'none';\n" +
+            "  document.getElementById(\"serv-arch-iframe\").style.display = 'block';\n" +
+            "  document.getElementById(\"serv-arch\").style.color = \"#ffffff\";\n" +
+            "  document.getElementById(\"serv-arch\").style.backgroundColor = \"#365bef\";\n" +
+            "  document.getElementById(\"audit-metrics\").style.backgroundColor = \"\"; // doubt\n" +
+            "  document.getElementById(\"audit-metrics\").style.color = \"#365bef\";\n" +
+            "}\n" +
+            "function onAuditMetricsClicked() {\n" +
+            "  document.getElementById(\"audit-metrics\").classList.add(\"mdc-button--raised\");\n" +
+            "  document.getElementById(\"audit-metrics\").classList.remove(\"mdc-button--outlined\");\n" +
+            "  document.getElementById(\"serv-arch\").classList.add(\"mdc-button--outlined\");\n" +
+            "  document.getElementById(\"serv-arch\").classList.remove(\"mdc-button--raised\");\n" +
+            "  document.getElementById(\"serv-arch-iframe\").style.display = 'none';\n" +
+            "  document.getElementById(\"audit-metrics-iframe\").style.display = 'block';\n" +
+            "  document.getElementById(\"audit-metrics\").style.color = \"#ffffff\";\n" +
+            "  document.getElementById(\"audit-metrics\").style.backgroundColor = \"#365bef\";\n" +
+            "  document.getElementById(\"serv-arch\").style.backgroundColor = \"\"; // doubt\n" +
+            "  document.getElementById(\"serv-arch\").style.color = \"#365bef\";\n" +
             "}\n" +
             "</script>\n" +
             "\n" +
