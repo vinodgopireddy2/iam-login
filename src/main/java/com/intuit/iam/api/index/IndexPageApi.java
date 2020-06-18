@@ -1,6 +1,8 @@
 package com.intuit.iam.api.index;
 
 import com.intuit.iam.model.requestbody.LoginRequestBody;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,11 +15,15 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 @Path("")
 public class IndexPageApi {
+
+    private static final Logger logger = LogManager.getLogger(com.intuit.iam.api.login.LoginApiService.class);
+
     @GET
     @Path("")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.TEXT_HTML)
     public Response login(LoginRequestBody body, @Context HttpServletRequest req, @Context HttpServletResponse res) {
+        logger.debug("Home page visited by clientIp: {}", req.getRemoteAddr());
     String indexHtml =  "<!DOCTYPE html>\n" +
             "<html>\n" +
             "<head>\n" +
