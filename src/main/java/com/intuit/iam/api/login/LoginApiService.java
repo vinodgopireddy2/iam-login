@@ -117,7 +117,12 @@ public class LoginApiService {
             session.setCreateTime(Instant.now().getEpochSecond());
             session.setIdleTimeExpiration(Instant.now().plus(Duration.ofSeconds(1200))); //Setting 20min expiry to support access_token expiry
 
-            session.setClientIpAddress(req.getRemoteAddr());
+            String clientIp = req.getHeader("X-Forwarded-For");
+            if(clientIp == null || clientIp.isEmpty())
+                clientIp = req.getRemoteAddr();
+            else
+                clientIp = clientIp.split(",")[0];
+            session.setClientIpAddress(clientIp);
             session.setUserAgent(req.getHeader("User-Agent"));
 
             //Set access_token and refresh_token in response headers

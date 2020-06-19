@@ -10,23 +10,29 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.core.*;
+
 @Path("")
 public class IndexPageApi {
 
-    private static final Logger logger = LogManager.getLogger(com.intuit.iam.api.login.LoginApiService.class);
+    private static final Logger logger = LogManager.getLogger(com.intuit.iam.api.index.IndexPageApi.class);
 
     @GET
     @Path("home")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.TEXT_HTML)
     public Response login(LoginRequestBody body, @Context HttpServletRequest req, @Context HttpServletResponse res) {
-        logger.debug("Home page visited by clientIp: {}", req.getRemoteAddr());
+        String clientIp = req.getHeader("X-Forwarded-For");
+        if(clientIp == null || clientIp.isEmpty())
+            clientIp = req.getRemoteAddr();
+        else
+            clientIp = clientIp.split(",")[0];
+        logger.debug("Home page visited by clientIp: {}", clientIp);
+
     String indexHtml =  "<!DOCTYPE html>\n" +
             "<html>\n" +
             "<head>\n" +
+            "  <link rel=\"icon\" type=\"image/png\" href=\"https://quickbooks.intuit.com/cas/dam/IMAGE/A348MDYum/favicon.png\">\n" +
             "  <link href=\"https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css\" rel=\"stylesheet\">\n" +
             "  <script src=\"https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js\"></script>\n" +
             "  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n" +
