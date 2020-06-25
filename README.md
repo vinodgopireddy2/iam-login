@@ -82,6 +82,18 @@ db.sessions.createIndex( { "createTime": 1 }, { expireAfterSeconds: 14400 } )
 db.sessions.createIndex( { "idleTimeExpiration": 1 }, { expireAfterSeconds: 0 } )
 ```
 
+**Build and deploy the images to cloud**
+```
+mvn clean install
+./build-iam-login-docker.sh
+docker tag iam/1.0 vinodgopireddy2/iam
+docker push vinodgopireddy2/iam --> you can push to any other docker repository
+
+After this, on kubernetes cluster we can delete the iam service pod and deploy as follows
+kubectl create -f <iam.yml>
+likewise we deploy the other pods too.
+
+```
 **API documentation**
 ```
 https://documenter.getpostman.com/view/1363980/Szzj7cs9?version=latest#dfaa1474-aeaa-f9db-bb61-e9df65d44498
