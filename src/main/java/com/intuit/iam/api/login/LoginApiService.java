@@ -78,7 +78,7 @@ public class LoginApiService {
                 return BuildErrorResponse.buildErrorResponse(IamErrors.eAccountLockedOnFailedAttempts.code(),
                         IamErrors.eAccountLockedOnFailedAttempts.getMsg(),
                         Response.Status.UNAUTHORIZED,
-                        IamErrors.eAccountLockedOnFailedAttempts.getMsg() + ". Wait till: " + Instant.ofEpochSecond(user.getAccLockTime()) + " and then try again");
+                        IamErrors.eAccountLockedOnFailedAttempts.getMsg() + ". Please try again later");
             }
             //validate user entered password
             boolean isValidPassword = CryptoUtils.validatePassword(loginRequestBody.getPassword(), user.getPassword());

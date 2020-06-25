@@ -75,7 +75,7 @@ public class CryptoUtils {
         return salt;
     }
 
-    private static String toHex(byte[] array) throws NoSuchAlgorithmException
+    private static String toHex(byte[] array)
     {
         BigInteger bi = new BigInteger(1, array);
         String hex = bi.toString(16);
@@ -88,7 +88,7 @@ public class CryptoUtils {
         }
     }
 
-    private static byte[] fromHex(String hex) throws NoSuchAlgorithmException
+    private static byte[] fromHex(String hex)
     {
         byte[] bytes = new byte[hex.length() / 2];
         for(int i = 0; i<bytes.length ;i++)
